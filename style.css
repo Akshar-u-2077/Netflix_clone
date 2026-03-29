@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    height: 89vh;
+}
+
+.main {
+    background-image: url("assets/img/background.jpg");
+    height: 84vh;
+    background-size: max(1200px,100vw);
+    background-position: center center;
+    position: relative;
+    background-repeat:repeat-y
+}
+
+.main .box {
+    background-color: black;
+    opacity: 0.7;
+    height: 84vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: auto;
+    top: 20px;
+    height: 193px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.main .hero {
+    display: flex;
+    color: white;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    font-size: large;
+    flex-direction: column;
+    font-family: "Martel Sans", sans-serif, bold;
+    gap: 10px;
+    height: calc(100%-62px);
+    
+
+}
+
+.main .hero span:first-child {
+    font-weight: bolder;
+    font-size: 80px;;
+    line-height: 80px;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+}
+
+.main .hero span:nth-child(2) {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main .hero span:nth-child(3) {
+    font-weight: lighter;
+    text-align: center;
+}
+.main .hero div{
+    text-align: center;
+}
+.main .hero div input {
+    padding: 22px;
+    width: 300px;
+    background-color: black;
+    border: white;
+    border-radius: 5px;
+    border-width:10px;
+    text-align: center;
+    opacity: 0.69;
+    position: relative;
+    text-align: left;
+}
+
+.separation
+{
+    height: 5px;
+    background-color: rgb(99, 98, 98);
+}
+
+.btn {
+    padding:3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-red
+{
+    background-color: red;
+    color:white;
+    padding:10px 8px;
+    border-radius: 6px;
+}
+
+.btn-red-sign-in
+{
+    background-color: red;
+    color:white;
+    padding:3px 8px;
+}
