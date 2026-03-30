@@ -5,24 +5,27 @@
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     background-color: black;
     height: 89vh;
+    overflow-x: hidden;
 }
 
 .main {
+    width: 100%;
     background-image: url("assets/img/background.jpg");
-    height: 84vh;
-    background-size: max(1200px,100vw);
-    background-position: center center;
+    height: 98vh;
+    background-size:cover;
+    background-position: center;
     position: relative;
-    background-repeat:repeat-y
+    background-repeat: no-repeat;
 }
 
 .main .box {
     background-color: black;
     opacity: 0.7;
-    height: 84vh;
+    height: 99vh;
     width: 100%;
     top: 0;
     position: absolute;
@@ -41,6 +44,10 @@ nav {
     z-index: 10;
 }
 
+.logo {
+    padding-left: 112px;
+}
+
 nav button {
     position: relative;
     z-index: 10;
@@ -56,18 +63,19 @@ nav button {
     flex-direction: column;
     font-family: "Martel Sans", sans-serif, bold;
     gap: 10px;
-    height: calc(100%-62px);
-    
+    height: calc(100% - 62px);
+
 
 }
 
 .main .hero span:first-child {
     font-weight: bolder;
-    font-size: 80px;;
+    font-size: 80px;
     line-height: 80px;
     justify-content: center;
     text-align: center;
-    width: 800px;
+    max-width: 750px;
+
 }
 
 .main .hero span:nth-child(2) {
@@ -79,45 +87,58 @@ nav button {
     font-weight: lighter;
     text-align: center;
 }
-.main .hero div{
+
+.main .hero div {
     text-align: center;
-}
-.main .hero div input {
-    padding: 22px;
-    width: 300px;
-    background-color: black;
-    border: white;
-    border-radius: 5px;
-    border-width:10px;
-    text-align: center;
-    opacity: 0.69;
-    position: relative;
-    text-align: left;
+
 }
 
-.separation
-{
+.main .hero div input {
+    padding: 13px;
+    background-color: rgba(23, 23, 23, 0.69);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+    position: relative;
+    text-align: left;
+    font-size: large;
+    color: white;
+    font-weight: normal;
+}
+
+.main .hero div input:hover {
+    border-width: px;
+    color: white;
+}
+
+.separation {
     height: 5px;
     background-color: rgb(99, 98, 98);
 }
 
 .btn {
-    padding:3px 8px;
+    padding: 3px 8px;
     font-weight: bold;
     background-color: white;
+   
 }
 
-.btn-red
-{
+.hero .btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-red {
     background-color: red;
-    color:white;
-    padding:10px 8px;
+    color: white;
+    padding: 12px 46px;
     border-radius: 6px;
+    font-weight: bolder;
+    font-size: larger;
 }
 
-.btn-red-sign-in
-{
+.btn-red-sign-in {
     background-color: red;
-    color:white;
-    padding:3px 8px;
+    color: white;
+    padding: 3px 8px;
 }
