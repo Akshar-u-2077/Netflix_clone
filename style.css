@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
 
     padding: 0;
@@ -42,6 +42,7 @@ nav {
     height: 193px;
     position: relative;
     z-index: 10;
+    position:sticky
 }
 
 .logo {
@@ -115,12 +116,30 @@ nav button {
     height: 5px;
     background-color: rgb(99, 98, 98);
 }
+.top-buttons
+{
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    gap: 5px;
+}
 
-.btn {
-    padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
-   
+.language {
+    padding: 4px 4px;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 120px;
+    color: white;
+    background-color:rgba(23,23,23,0.1 );
+    font-family: "Poppins", sans-serif;
+    font-weight:450;
+    font-size: medium;
+    border-radius: 5px;
+    border-width:2px;
+}
+.language:focus        
+{
+    border-color: white;
 }
 
 .hero .btns {
@@ -135,10 +154,41 @@ nav button {
     border-radius: 6px;
     font-weight: bolder;
     font-size: larger;
+    cursor: pointer;
 }
 
 .btn-red-sign-in {
+    font-family: "Poppins", sans-serif;
+    font-weight:600;
+    font-size: medium;
     background-color: red;
     color: white;
-    padding: 3px 8px;
+    padding: 4px 4px;
+    border-radius: 4px;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.trending_cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    position: relative;
+
+}
+.card
+{
+    min-width: 150px;
+
+    border-radius: 6px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.3s;
+    height: 500px;
+}
+.card:hover
+{
+   transform:scale(1.166);
 }
