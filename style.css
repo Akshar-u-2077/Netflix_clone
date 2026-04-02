@@ -42,7 +42,6 @@ nav {
     height: 193px;
     position: relative;
     z-index: 10;
-    position:sticky
 }
 
 .logo {
@@ -175,7 +174,6 @@ nav button {
     flex-direction: row;
     justify-content: center;
     gap:10px;
-    position: relative;
 
 }
 .card
@@ -186,9 +184,16 @@ nav button {
     overflow: hidden;
     object-fit: cover;
     transition: 0.3s;
-    height: 500px;
 }
 .card:hover
 {
-   transform:scale(1.166);
+   transform:scale(1.055);
+}
+
+.extra-things
+{
+    font-family: ;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight:600;
 }
