@@ -1,5 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+.netflix-sans-font-loaded {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+    font-family: NKufi,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+    font-family: GraphikTH,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.error-page {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    background: rgba(0,0,0,.18);
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    left: 0;
+    margin-top: 68px;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000
+}
+
 * {
 
     padding: 0;
@@ -59,9 +143,9 @@ nav button {
     align-items: center;
     position: relative;
     justify-content: center;
-    font-size: large;
+    font-size: 100;
     flex-direction: column;
-    font-family: "Martel Sans", sans-serif, bold;
+    font-family: 'Netflix Sans';
     gap: 10px;
     height: calc(100% - 62px);
 
@@ -167,33 +251,70 @@ nav button {
     border-width: 0px;
     cursor: pointer;
 }
-
-.trending_cards
+.trending_cards /* container for cards*/
 {
+    padding-left: 150px;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: "Poppins", sans-serif;
+    color: white;
+    flex-shrink: 0; 
+    padding-right: 100px;
+}
+.trending_cards .trending
+{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.cards
+{
+    padding-top: 30px;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width:none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap:10px;
+    gap:15px;
+    
 
 }
-.card
+.trending_cards .cards .card
 {
-    min-width: 150px;
-
-    border-radius: 6px;
+    position: relative;
+    min-width: fit-content;
+    display: block;
+    border-radius: 10px;
     overflow: hidden;
-    object-fit: cover;
     transition: 0.3s;
+    object-fit: cover;
 }
 .card:hover
 {
-   transform:scale(1.055);
+   transform:scale(1.10008);
 }
 
-.extra-things
+.card .rank
 {
-    font-family: ;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight:600;
+    position: absolute;
+    font-family: 'Netflix Sans',sans-serif;
+    font-size: 129px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    transform: translate(-1%, 10%);
 }
+
+
+
+
