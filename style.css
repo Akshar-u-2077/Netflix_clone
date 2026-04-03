@@ -1,67 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 100;
     font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 300;
     font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 400;
     font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 700;
     font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 800;
     font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 900;
     font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
 }
 
 .netflix-sans-font-loaded {
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 .netflix-sans-font-loaded.nkufi-font-loaded {
-    font-family: NKufi,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+    font-family: NKufi, 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 .netflix-sans-font-loaded.graphik-font-loaded {
-    font-family: GraphikTH,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+    font-family: GraphikTH, 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 .error-page {
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 10px;
     line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #fff;
-    background: rgba(0,0,0,.18);
+    background: rgba(0, 0, 0, .18);
     bottom: 0;
     display: -webkit-box;
     display: -webkit-flex;
@@ -79,6 +80,7 @@
     margin-top: 68px;
     overflow: hidden;
     position: fixed;
+    
     right: 0;
     top: 0;
     z-index: 1000
@@ -92,15 +94,14 @@
 
 body {
     background-color: black;
-    height: 89vh;
-    overflow-x: hidden;
+    height: 500vh;
 }
 
 .main {
     width: 100%;
     background-image: url("assets/img/background.jpg");
     height: 98vh;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     position: relative;
     background-repeat: no-repeat;
@@ -199,8 +200,8 @@ nav button {
     height: 5px;
     background-color: rgb(99, 98, 98);
 }
-.top-buttons
-{
+
+.top-buttons {
     display: flex;
     flex-direction: row;
     height: 35px;
@@ -213,15 +214,15 @@ nav button {
     padding-right: 18px;
     width: 120px;
     color: white;
-    background-color:rgba(23,23,23,0.1 );
+    background-color: rgba(23, 23, 23, 0.1);
     font-family: "Poppins", sans-serif;
-    font-weight:450;
+    font-weight: 450;
     font-size: medium;
     border-radius: 5px;
-    border-width:2px;
+    border-width: 2px;
 }
-.language:focus        
-{
+
+.language:focus {
     border-color: white;
 }
 
@@ -242,7 +243,7 @@ nav button {
 
 .btn-red-sign-in {
     font-family: "Poppins", sans-serif;
-    font-weight:600;
+    font-weight: 600;
     font-size: medium;
     background-color: red;
     color: white;
@@ -251,26 +252,29 @@ nav button {
     border-width: 0px;
     cursor: pointer;
 }
-.trending_cards /* container for cards*/
-{
+
+.trending_cards
+
+/* container for cards*/
+    {
     padding-left: 150px;
     max-width: 1400px;
     display: flex;
     flex-direction: column;
-    
+
     font-family: "Poppins", sans-serif;
     color: white;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     padding-right: 100px;
+    bottom: 50px;
 }
-.trending_cards .trending
-{
+
+.trending_cards .trending {
     font-size: 25px;
     font-weight: bolder;
 }
 
-.cards
-{
+.cards {
     padding-top: 30px;
     align-items: center;
 
@@ -279,15 +283,15 @@ nav button {
 
     overflow-x: auto;
     overflow-y: hidden;
-    scrollbar-width:none;
+    scrollbar-width: none;
     display: flex;
     flex-direction: row;
-    gap:15px;
-    
+    gap: 15px;
+
 
 }
-.trending_cards .cards .card
-{
+
+.trending_cards .cards .card {
     position: relative;
     min-width: fit-content;
     display: block;
@@ -296,15 +300,14 @@ nav button {
     transition: 0.3s;
     object-fit: cover;
 }
-.card:hover
-{
-   transform:scale(1.10008);
+
+.card:hover {
+    transform: scale(1.10008);
 }
 
-.card .rank
-{
+.card .rank {
     position: absolute;
-    font-family: 'Netflix Sans',sans-serif;
+    font-family: 'Netflix Sans', sans-serif;
     font-size: 129px;
     font-weight: 900;
     color: black;
@@ -314,7 +317,39 @@ nav button {
     bottom: 0;
     transform: translate(-1%, 10%);
 }
+.extra-things
+{
+    font-family: 'Netflix Sans', sans-serif;
+    padding-left: 138px;
+    padding-right: 94px;
+    top: 500px;
+}
 
+.extra-things .main-title
+{
+    color: #fff;
+    font-size: large;
+    font-weight: 900;
 
+}
 
+.containers
+{
+    gap: 10px;
+    color:white;
+    display: flex;
+    flex-direction: row;
+
+}
+.containers .title{
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.containers .extra-text
+{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg,rgba(25,23,48,1) 0%,rgba(21,16,31,1));
+}
 
