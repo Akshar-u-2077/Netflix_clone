@@ -365,5 +365,8 @@ nav button {
 .extra-text img
 {
     width: 108px;
+    position: relative;
+
+
 }
 
