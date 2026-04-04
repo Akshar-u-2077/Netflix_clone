@@ -327,6 +327,8 @@ nav button {
 
 .extra-things .main-title
 {
+    display: flex;
+    padding-bottom: 50px;
     color: #fff;
     font-size: large;
     font-weight: 900;
@@ -340,16 +342,28 @@ nav button {
     display: flex;
     flex-direction: row;
 
+
 }
-.containers .title{
+.containers .extra-text .title{
     font-size: x-large;
     font-weight: 900;
+    display: flex;
+    padding-bottom: 20px;
 }
 
 .containers .extra-text
 {
+    height: 250px;
+    line-height: 30px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
+    padding:25px;
     background: linear-gradient(135deg,rgba(25,23,48,1) 0%,rgba(21,16,31,1));
+}
+
+.extra-text img
+{
+    width: 108px;
 }
 
